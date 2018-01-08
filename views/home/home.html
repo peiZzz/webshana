@@ -1,0 +1,87 @@
+<div class="home">
+	<ion-header-bar align-title="left" class="bar-positive bar-assertive fixed">
+		<div class="col col-20 place">
+			<span class="">佛山</span>
+			<i class="ion-ios-arrow-down"></i>
+		</div>
+		<div class="search col col-60" ng-click="goPage('search')">
+			<i class="icon ion-ios-search search_icon"></i>
+		</div>
+		<div class="check col col-20">
+			<i class="ion-ios-barcode-outline check_icon"></i>
+			<div>扫一扫</div>
+		</div>
+	</ion-header-bar>			
+	<div class="ion-content">
+		<ion-slide-box does-continue="{{slide.doesContinue}}" auto-play="slide.autoPlay" slide-interval="{{slide.intervalTime}}" show-pager="{{slide.showPager}}">
+			<ion-slide ng-repeat="item in data track by $index">
+				<img class="auto_img" ng-src="{{item.img}}" />
+			</ion-slide>
+		</ion-slide-box>
+
+		<div class="row">
+			<div class="col col-25 pro_title">
+				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(13).png">
+				<div>美白润肤</div>
+			</div>
+			<div class="col col-25 pro_title">
+				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(12).png">
+				<div>睫毛膏</div>
+			</div>
+			<div class="col col-25 pro_title">
+				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(11).png">
+				<div>保湿锁水</div>
+			</div>
+			<div class="col col-25 pro_title">
+				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(10).png">
+				<div>控油祛痘</div>
+			</div>
+		</div>
+
+		<div class="padding-top padding-bottom">
+			<img class="auto_img" src="./images/classify_bar_banner_@3x.png">
+		</div>
+
+		<div class="padding-left title-bar">
+			<div class="title ">畅销系列</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-33" ng-repeat="item in proData track by $index">
+				<img class="auto_img" ng-src="{{item.img}}">
+				<div class="pro_detail">
+					<div class="pro_detail_title">{{item.name}}}</div>
+					<div class="pro_pirce">
+						<div><i class="{{item.class}}"></i><span>{{item.newPirce}}</span><i class="{{item.classR}} fr"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<div class="padding-left title-bar">
+			<div class="title ">新品上市</div>
+		</div>	
+
+		<div class="row row-wrap padding">			
+			<div class="col col-50 " ng-repeat="item in newData track by $index">
+				<div class="box-border">
+					<img class="auto_img" ng-src="{{item.img}}" />
+					<div class="bgcolor">
+						<div>{{item.name}}</div>
+						<div class="color">
+							<div>
+								<i class="{{item.class}}"></i>
+								<span class="cut">{{item.oldPirce}}</span>
+								<span>{{item.newPirce}}</span>
+								<i class="{{item.classR}} fr"></i>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+		</div>	
+	</div>
+
+	
+</div>

@@ -1,0 +1,36 @@
+<div class="proList">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="myGoBack()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">美白保湿系列</div>	
+		<div class="button button-clear">
+			<i class="button button-clear icon ion-ios-search placeholder-icon" ng-click="goValue()"></i>
+			<i class="button button-clear icon ion-android-cart placeholder-icon"></i>
+		</div>	
+	</ion-header-bar>
+
+	<div class="pacse">
+		<div class="row padding sub">
+			<span class="col col-20" ng-repeat="item in data track by $index">{{item.name}}</span>
+		</div>
+		<div class="row row-wrap padding">			
+			<div class="col col-50 " ng-repeat="item in proData track by $index">
+				<div class="box-border" ng-click="goDeep(item.url)">
+					<img class="auto_img bor_img" ng-src="{{item.img}}"/>
+					<div class="">
+						<div class="proname" >{{item.name}}</div>
+						<div class="">
+							<div class="color">
+								<i class="{{item.class}}"></i>
+								<span>{{item.newPirce}}</span>
+								<i class="{{item.classR}} fr"></i>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+		</div>	
+	</div>
+</div>

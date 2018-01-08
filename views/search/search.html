@@ -1,0 +1,23 @@
+<div class="search">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="item-input-wrapper search-int">
+			<input type="search" name="">
+			<i class="button button-clear icon ion-ios-search placeholder-icon color" ng-click="goPage('pro_search')"></i>
+		</div>
+	</ion-header-bar>
+
+	<ion-content>
+		<div class="padding search_title">
+			<span>历史搜索</span>
+			<i class="icon ion-ios-trash-outline fr"></i>
+		</div>
+
+		<div class="padding">
+			<span ng-repeat="item in data track by $index" class="history-search">{{item.name}}</span>
+		</div>
+	</ion-content>
+	
+</div>

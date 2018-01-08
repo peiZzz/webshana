@@ -1,0 +1,37 @@
+<div class="classify">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="item-input-wrapper classify-int">
+			<input type="search" name="">
+			<i class="button button-clear icon ion-ios-search placeholder-icon color" ng-click="goValue()"></i>
+		</div>
+		
+	</ion-header-bar>
+	<div scroll="false" class="content">
+		<div class="row left_content">
+			<ion-scroll direction="y" class="col col-33 classify_list">
+				<div class="">
+					<ion-list>
+
+						<h4 class="title">豆乳产品</h4>
+					    <ion-item ng-class="{'active': item.isActive}" class="classify_border" ng-repeat="item in data track by $index" ng-click="goPage(item.url)">
+					    {{item.name}}
+					    </ion-item>
+					</ion-list>
+				</div>
+			</ion-scroll>
+			<div class="col">
+				<div>
+					<img class="auto_img" src="./images/classification_bar_img_1@3x.png">
+				</div>
+				<div class="row row-wrap">
+					<div class="col col-50" ng-repeat="item in proData track by $index">
+						<img class="auto_img product_img" ng-src="{{item.img}}" />
+						<div class="product">{{item.title}}</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>

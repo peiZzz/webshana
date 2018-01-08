@@ -1,0 +1,52 @@
+<div class="pro_search">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="item-input-wrapper search-int">
+			<input type="search" name="">
+			<i class="button button-clear icon ion-ios-search placeholder-icon color" ng-click="goPage('')"></i>
+		</div>
+		
+	</ion-header-bar>
+
+	<div class="fixed">
+			<div class="row nav-bg ">
+				<div class="col col-20 align" ng-class="{'active': item.isActive}" ng-repeat="item in data track by $index" ng-click="a(item)">{{item.name}}</div>
+			</div>
+
+			<div class="row pover white-bg">
+				<div class="col col-80">
+					<div class="row">
+						<div class="col col-50">混合排序</div>
+						<div class="col col-50">销量优先</div>
+					</div>
+				</div>
+				<div class="col screen" ng-click="toggleScr()">
+					<span>筛选</span>
+					<i class="icon ion-funnel"></i>
+				</div>
+
+				<div ng-if="toggle" class="dd"></div>
+			</div>
+	</div>
+	<ion-content>
+		<div class="list proM">
+			<a class="item item-thumbnail-left" href="" ng-repeat="item in proData track by $index">
+				<img class="auto_img" ng-src="{{item.img}}" />
+				<div class="">
+					<h2 class="pro_title">{{item.title}}</h2>
+					<div class="pro_place">{{item.place}}</div>
+					<div class="pro_buy">
+						<i class="{{item.class}}"></i>
+						<span>{{item.price}}</span>
+						<div class="pro_num">
+							<span>{{item.num}}</span>人付款
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</ion-content>
+	
+</div>

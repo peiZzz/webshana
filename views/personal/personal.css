@@ -1,0 +1,66 @@
+.personal .header{
+	text-align: center;	
+	background: url('../../images/personal_banner.png');
+	background-size: cover;
+}
+.personal .header .personal_banner{
+	z-index: -2;
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0
+}
+.personal .header .user_box{
+	padding-top: 3%;
+	height: 100%;
+}
+.personal .header .user_icon{
+	width: 20%;
+	border-radius: 50%;
+}
+.personal .header .user_id{
+	color: #FFF;
+}
+.personal .header ul{
+	overflow: hidden;
+	padding-top: 20px;
+}
+.personal .header li{
+	float: left;
+	color: #FFF;
+	text-align: center; 
+}
+.personal .border_line{
+	border-bottom:1px solid #ccc;
+}
+.personal .content {
+	margin-bottom: 49px;
+}
+.personal .content .more{
+	font-size: 12px;
+	color:#CCC;
+}
+.personal .powerMenu{
+	padding: 0
+}
+.personal .powerMenu li{
+	text-align: center;
+}
+.personal .powerMenu li>img{
+	width: 70%;
+	display: inline-block;
+}
+.personal .powerMenu li>div{
+    text-align: center;
+    font-size: 12px;
+}
+.personal .setting li{
+	padding: 20px 10px;
+	border-bottom:1px solid #ccc;
+}
+.personal .setting li>span{
+	font-size: 16px;
+}
+.personal .setting li>i{
+	color: #CCC;
+}

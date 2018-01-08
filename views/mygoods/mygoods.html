@@ -1,0 +1,195 @@
+<div class="mygoods">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">我的订单</div>	
+		<div class="button button-clear">
+			<i class="button button-clear icon ion-ios-search placeholder-icon" ng-click="goValue()"></i>
+			<i class="button button-clear icon ion-android-cart placeholder-icon"></i>
+		</div>	
+	</ion-header-bar>
+
+	<div class="content">
+		<ul class="title row clearfix">
+			<li class="col col-20 fl " ng-repeat="key in title track by $index" ng-click="title_click($index)">
+				<span ng-class="{'border_bottom': aIndex === $index}" class="padding">
+					{{key.txt}}
+				</span>
+			</li>
+		</ul>
+         <ion-slide-box show-pager="{{slide.showPager}}" active-slide="aIndex">
+         	<ion-slide>
+         		<div class="list">
+					<div class="" ng-repeat="item in data track by $index" >
+						<div class="list_title padding clearfix">
+							<span class="fl">{{item.shop}}</span>
+							<span class="fr state_color">{{item.state}}</span>
+						</div>
+						<div class="row">
+							<div class="col col-80">
+								<div class="item item-thumbnail-left">
+									<img ng-src="{{item.img}}" class="auto_img">
+									<span>{{item.text}}</span>
+									<div class="para">{{item.para}}</div>
+								</div>
+							</div>
+							<div class="col col-20">
+								<div class="padding-top price">￥{{item.price}}</div>
+								<div class="padding-top num">{{item.num}}</div>
+							</div>
+						</div>
+						<div class="total">
+							<span>共 <span>{{item.total_num}}</span>件商品</span>
+							<span>小计：<span>￥{{item.total_price}}</span>(含运费：<span>{{item.total_fare}}</span> )	 </span>
+						</div>
+						<div class="payway">
+							<span class="payfor" ng-class="{'dispaly_none': state.indexOf(item.state) == 0 }" >朋友代付</span>
+		                   <span class="cancel" ng-class="{'dispaly_none': state.indexOf(item.state) == 0  }">取消订单</span>
+		                   <span class="pay" ng-class="{'dispaly_none': state.indexOf(item.state) == 0 }">付款</span>
+		                   <span class="delete" ng-click="delete(item)" ng-class="{'dispaly_none': state1.indexOf(item.state) == 0 }">删除订单</span>
+						</div>
+					</div>
+				</div>
+         	</ion-slide>
+
+         	<ion-slide>
+         		<div class="list">
+					<div class="" ng-repeat="item in data track by $index">
+						<div class="list_title padding clearfix">
+							<span class="fl">{{item.shop}}</span>
+							<span class="fr state_color">{{item.state1}}</span>
+						</div>
+						<div class="row">
+							<div class="col col-80">
+								<div class="item item-thumbnail-left">
+									<img ng-src="{{item.img}}" class="auto_img">
+									<span>{{item.text}}</span>
+									<div class="para">{{item.para}}</div>
+								</div>
+							</div>
+							<div class="col col-20">
+								<div class="padding-top price">￥{{item.price}}</div>
+								<div class="padding-top num">{{item.num}}</div>
+							</div>
+						</div>
+						<div class="total">
+							<span>共 <span>{{item.total_num}}</span>件商品</span>
+							<span>小计：<span>￥{{item.total_price}}</span>(含运费：<span>{{item.total_fare}}</span> )	 </span>
+						</div>
+						<div class="payway">
+							<span class="payfor" >朋友代付</span>
+		                   <span class="cancel" }">取消订单</span>
+		                   <span class="pay" >付款</span>
+		                   
+						</div>
+					</div>
+				</div>
+         	</ion-slide>
+
+         	<ion-slide>
+         		<div class="list">
+					<div class="" ng-repeat="item in data track by $index">
+						<div class="list_title padding clearfix">
+							<span class="fl">{{item.shop}}</span>
+							<span class="fr state_color">{{item.state2}}</span>
+						</div>
+						<div class="row">
+							<div class="col col-80">
+								<div class="item item-thumbnail-left">
+									<img ng-src="{{item.img}}" class="auto_img">
+									<span>{{item.text}}</span>
+									<div class="para">{{item.para}}</div>
+								</div>
+							</div>
+							<div class="col col-20">
+								<div class="padding-top price">￥{{item.price}}</div>
+								<div class="padding-top num">{{item.num}}</div>
+							</div>
+						</div>
+						<div class="total">
+							<span>共 <span>{{item.total_num}}</span>件商品</span>
+							<span>小计：<span>￥{{item.total_price}}</span>(含运费：<span>{{item.total_fare}}</span> )	 </span>
+						</div>
+						<div class="payway">
+							<span class="payfor" >查看物流</span>
+		                   
+		                   <span class="pay" >提醒发货</span>
+		                   
+						</div>
+					</div>
+				</div>
+         	</ion-slide>
+
+         	<ion-slide>
+         		<div class="list">
+					<div class="" ng-repeat="item in data track by $index">
+						<div class="list_title padding clearfix">
+							<span class="fl">{{item.shop}}</span>
+							<span class="fr state_color">{{item.state3}}</span>
+						</div>
+						<div class="row">
+							<div class="col col-80">
+								<div class="item item-thumbnail-left">
+									<img ng-src="{{item.img}}" class="auto_img">
+									<span>{{item.text}}</span>
+									<div class="para">{{item.para}}</div>
+								</div>
+							</div>
+							<div class="col col-20">
+								<div class="padding-top price">￥{{item.price}}</div>
+								<div class="padding-top num">{{item.num}}</div>
+							</div>
+						</div>
+						<div class="total">
+							<span>共 <span>{{item.total_num}}</span>件商品</span>
+							<span>小计：<span>￥{{item.total_price}}</span>(含运费：<span>{{item.total_fare}}</span> )	 </span>
+						</div>
+						<div class="payway">
+							<span class="cancel">延长收获</span>
+							<span class="payfor" >查看物流</span>		                  
+		                   	<span class="pay" >确认发货</span>
+		                   
+						</div>
+					</div>
+				</div>
+         	</ion-slide>
+
+         	<ion-slide>
+         		<div class="list">
+					<div class="" ng-repeat="item in data track by $index">
+						<div class="list_title padding clearfix">
+							<span class="fl">{{item.shop}}</span>
+							<span class="fr state_color">{{item.state4}}</span>
+						</div>
+						<div class="row">
+							<div class="col col-80">
+								<div class="item item-thumbnail-left">
+									<img ng-src="{{item.img}}" class="auto_img">
+									<span>{{item.text}}</span>
+									<div class="para">{{item.para}}</div>
+								</div>
+							</div>
+							<div class="col col-20">
+								<div class="padding-top price">￥{{item.price}}</div>
+								<div class="padding-top num">{{item.num}}</div>
+							</div>
+						</div>
+						<div class="total">
+							<span>共 <span>{{item.total_num}}</span>件商品</span>
+							<span>小计：<span>￥{{item.total_price}}</span>(含运费：<span>{{item.total_fare}}</span> )	 </span>
+						</div>
+						<div class="payway">
+							
+							<span class="payfor" ng-click="delete(item)">删除订单</span>		                  
+		                   	<span class="pay" ng-click="goPage('layout.assess')">评价订单</span>
+		                   
+						</div>
+					</div>
+				</div>
+         	</ion-slide>
+         	
+         </ion-slide-box >
+		
+	</div>
+</div>

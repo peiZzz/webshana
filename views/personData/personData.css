@@ -1,0 +1,29 @@
+.personData .content{
+	margin-bottom: 49px;
+}
+.personData .setting li{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #CCC;
+	padding: 0 10px;
+	font-size: 16px;
+}
+.personData .setting .fre{
+	width: 40px;	
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.personData .setting .ercode{
+	width: 40px;
+	display: inline-block;
+}
+.personData .setting .setting-color{
+	color: #CCC;
+}
+.personData .setting .setting_img{
+	padding-top: 10px;
+}
+.personData .setting .setting_img1{
+	padding-top: 5px;
+}

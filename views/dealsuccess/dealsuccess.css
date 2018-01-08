@@ -1,0 +1,33 @@
+.dealsuccess .center{
+	padding-bottom: 50px;
+}
+.dealsuccess .align{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+.dealsuccess .protuck{
+	width: 60%;
+}
+.dealsuccess .pay{
+	padding-top: 10px;
+}
+.dealsuccess .trueM{
+	color: #c00;
+	font-size: 18px;
+}
+.dealsuccess .box{
+	margin-top: 20px;
+	border-bottom:1px solid #dedede; 
+}
+.dealsuccess .btn {
+	height: 30px;
+	width: 50%;
+	background: #ff393d;
+	color: #FFF;
+	line-height: 30px;
+	border-radius: 10px;
+	text-align: center;
+	display: inline-block;
+	margin:0 auto;
+}

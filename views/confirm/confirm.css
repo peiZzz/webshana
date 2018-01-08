@@ -1,0 +1,74 @@
+.confirm .content{
+	margin-bottom: 50px;
+}
+.confirm .contacks{
+	font-size: 14px;
+	border-bottom: 5px solid #dedede
+}
+.confirm .parameter{
+	font-size: 12px;
+	color:#CCC
+}
+.confirm .pirce{
+	color: #c00
+}
+.confirm .border{
+	border: none;	
+}
+.confirm .auto{
+	overflow: hidden;
+	text-overflow:ellipsis
+}
+.confirm .pad_top{
+	padding-top: 20px;
+}
+.confirm .clear{
+	margin-top: 0;
+	border-top:none 
+}
+.confirm .shopping_mes{
+	border-bottom: 5px solid #CCC;
+}
+.confirm .shopping_mes_list{
+	margin-bottom: 10px;
+}
+.confirm .leave{
+	overflow: hidden;
+}
+.confirm .leave>textarea{
+	width: 80%;
+	float: left;
+	background: transparent;
+}
+.confirm .leave>span{
+	font-size: 16px;
+	color: #444
+}
+.confirm .total{
+	text-align: right;
+}
+.confirm .total_color{
+	color: #c00;
+}
+.confirm .size{
+	font-size: 16px;
+}
+.confirm .footer{
+	position: absolute;
+	left: 0;
+	bottom:0;
+	height: 50px;
+	width: 100%;
+}
+.confirm .btn{
+	width: 30%;
+	background: #ff393d;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	font-size: 18px;
+}
+.confirm .footer_price{
+	line-height: 50px;
+}

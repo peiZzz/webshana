@@ -1,0 +1,86 @@
+.shopping .content{
+	margin-bottom: 49px;
+}
+.shopping .btn_title{
+	overflow: hidden;
+}
+.shopping .buttons{
+	display: inline-block;
+}
+.shopping .btn_txt{
+	height: 47px;
+	display: inline-block;
+	line-height: 47px;
+	font-size: 18px;
+}
+.shopping .auto{
+	overflow: hidden;
+	text-overflow:ellipsis
+}
+.shopping .subtitle{
+	font-size: 14px;
+	color:#ccc;
+}
+.shopping .price{
+	width: 40px;
+	height: 20px;
+	border-left: 1px solid #444;
+	border-right: 1px solid #444;
+}
+.shopping .buy{
+	display: inline-block;
+	border: 1px solid #444;
+	border-radius: 10px;
+}
+.shopping .buy>span{
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+}
+.shopping .item-content{
+	padding: 10px;
+}
+.shopping .item-thumbnail-left>img:first-child {
+  	max-height: 80px;
+  	max-width: 80px;
+  	width: 100%;
+  	height: 100%;
+  	position: inherit;
+  	left: 0;
+  	top: 0;
+  	float: left;
+}
+.shopping .checkbox{
+	width: 20px;
+	height: 30px;
+	display: inline-block;
+}
+.shopping .checkbox_F{
+	line-height: 98px;
+}
+.shopping .btn{
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	background: #e4393c;
+	line-height: 45px;
+}
+.shopping .padding_clear{
+	padding: 0px;
+}
+.shopping .hide{
+	overflow: hidden;
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+}
+.shopping .all{
+	height: 45px;
+	line-height: 45px;
+}
+.shopping .allcheck{
+	width: 20px;
+	height: 20px;
+	vertical-align:middle ;
+	display: inline-block !important;
+}

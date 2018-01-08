@@ -1,0 +1,70 @@
+<div class="assessDone">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">
+			评价成功
+		</div>
+	</ion-header-bar>
+	<div class="content">
+		<div class="thanks_txt">
+			<i class="icon ion-android-favorite"></i>
+			<span>谢谢你用心评价，这会帮助到更多想买的他们</span>
+
+			<div class="btn">
+				查看我的评价
+			</div>
+		</div>
+		<div class="gifts">
+			<span class="gift_title">客官给您送上福利喔~~</span>
+			<div class="clearfix gift_box">
+				<div class="fl gift_left">
+					<div class="gift_img padding">
+						<img src="./images/icons/Evaluate_success_bar_icon_1@3x(2).png" class="auto_img">
+					</div>
+					<div class="draw padding">
+						领取礼包
+					</div>
+				</div>
+				<div class="fl gift_right">
+					<div class="gift_img padding">
+						<img src="./images/icons/Evaluate_success_bar_icon_1@3x_(1).png" class="auto_img">
+					</div>
+					<div class="draw">
+						领取红包
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="guess_title">
+		<span>这些宝贝还可以追评一下</span>
+		</div>
+
+		<div class="pro">
+			<div class="padding-left">
+				<span>你可能还想买</span>
+			</div>
+			<div class="row row-wrap">			
+				<div class="col col-50 " ng-repeat="item in newData track by $index">
+					<div class="box-border" ng-click="goPage(item.url)">
+						<img class="auto_img" ng-src="{{item.img}}" />
+						<div class="backgroundcolor">
+							<div>{{item.name}}</div>
+							<div class="color">
+								<div>
+									<i class="{{item.class}}"></i>
+									<span class="cut">{{item.oldPirce}}</span>
+									<span>{{item.newPirce}}</span>
+									<i class="{{item.classR}} fr"></i>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>					
+			</div>	
+		</div>
+	</div>	
+</div>

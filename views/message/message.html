@@ -1,0 +1,27 @@
+<div class="message">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="title">消息(2)</div>	
+	</ion-header-bar >
+
+	<div >
+		<div class="message_content padding">
+			<div class="navigation row">
+				<div class="col col-33 nav" ng-repeat="item in data track by $index" ng-click ="check(item.url)">
+					<img ng-src="{{item.img}}" class="auto_img">
+					<div class="padding" id="{{item.id}}" >{{item.name}}</div>
+				</div>
+			</div>
+			<div class="list message_content_list">
+				<div class="item item-thumbnail-left" ng-repeat="item in talkData track by $index">
+					<img ng-src="{{item.img}}" class="auto_img">
+					<div class="padding-top list_name">{{item.name}}</div>
+					<div class="list_content" >{{item.content}}</div>
+				</div>
+			</div>
+
+			<div class="message_line padding">
+				<span>一周前的消息</span>
+			</div>
+		</div>
+	</div>
+</div>

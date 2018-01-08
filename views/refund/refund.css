@@ -1,0 +1,21 @@
+.refund .content_title>span{
+	font-size: 18px;
+	font-weight: bold;
+} 
+.refund .content{
+	padding-bottom: 49px;
+	margin-bottom: 49px;
+}
+.refund .content .price{
+	color: #ff393d
+}
+.refund .content .price_line{
+	border-bottom: 1px solid #ccc;
+}
+.refund .content .checkDetail{
+	border: 1px solid #ff393d;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 0 10px;
+	color: #ff393d
+}

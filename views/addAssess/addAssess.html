@@ -1,0 +1,37 @@
+<div class="addAssess">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">追加评价</div>	
+		<div class="button button-clear">
+			<i class="button button-clear icon ion-ios-search placeholder-icon" ng-click="goValue()"></i>
+			<i class="button button-clear icon ion-android-cart placeholder-icon"></i>
+		</div>	
+	</ion-header-bar>
+
+	<div class="content">
+		<div class="row goodsdetail">
+			<div class="col col-25">
+				<img src="./images/pro_search@3x.png" class="auto_img">
+			</div>
+			<div class="col col-75 goodsTxt">
+				<span class="">
+				日本sana豆乳洗面奶女深层清洁补水保湿控油泡沫洁面
+				</span>
+			</div>
+		</div>
+
+		<div class="put">
+			<textarea placeholder="已经用了一段时间了，有更多宝贝使用心得？分享给想买的他们吧。" class="putbox" ng-click="toggle()"></textarea>
+			<div class="add_img padding">
+				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(34).png" class="add_icon">
+				<p>添加图片</p>
+			</div>
+		</div>
+
+		<button class="button button-balanced submit" ng-click="goPage('layout.assessDone')" ng-show="visible">
+		 提交
+		</button>
+	</div>
+</div>

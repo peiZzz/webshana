@@ -1,0 +1,80 @@
+<div class="confirm">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">
+			确认订单
+		</div>
+	</ion-header-bar>
+
+	<ion-content class="content">
+		<div class="contacks row">
+			<div class="col col-90">
+				<div>联系人: <span>黄某某</span><span class="fr">13454575415</span></div>
+				<div><span>联系地址: </span><span>广东省佛山市南海区狮山镇狮山大学城XXXXX</span></div>
+			</div>
+			<div class="col button">
+				<i class="icon ion-ios-arrow-right"></i>
+			</div>
+		</div>
+
+		<div class="prolist padding">
+			<div class="prolist_title">商品清单</div>
+			<div class="list">
+				<div class="item item-thumbnail-left border" ng-repeat="key in data track by $index">
+					<img class="auto_img" ng-src="{{key.img}}">
+					<div class="auto">{{key.name}}</div>
+					<div class="parameter">{{key.parameter}}</div>
+					<div class="pad_top">
+						<div class="pirce fl">
+							<i class="{{key.icon}}"></i><span class="">{{key.pirce}}</span>
+						</div>
+						<span class="fr">{{key.num}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shopping_mes">
+			<div class="list shopping_mes_list">
+				<div class="item row clear" ng-repeat="item in shopData track by $index">
+					<div class="col col-90">
+						<span>{{item.name}}</span>
+						<span class="fr">{{item.state}}</span>
+					</div>
+					<div class="col">
+						<i class="{{item.icon}} fr"></i>
+					</div>					
+				</div>
+			</div>
+			<div class="leave padding-left">
+				<span class="fl">买家留言：</span>
+				<textarea></textarea>
+			</div>
+
+			<div class="total padding">
+				<span>共<span>7</span>件商品</span>
+				<span class="padding-left">小计:</span>
+				<span class="total_color">
+					<i class="icon ion-social-yen"></i>
+					<span class="size">535.00</span>
+				</span>
+			</div>
+		</div>
+	</ion-content>
+
+	<div class="footer">
+		<div class="btn fr" ng-click="modal_on()">
+			提交订单
+		</div>
+		<div class="fr footer_price padding-right">
+			合计金额：
+			<span class="total_color">
+				<i class="icon ion-social-yen"></i>
+				<span class="size">535.00</span>
+			</span>
+		</div>		
+	</div>
+	
+</div>

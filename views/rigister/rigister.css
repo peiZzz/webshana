@@ -1,0 +1,58 @@
+.rigister .message{
+	padding: 5% 20%;
+}
+.rigister .input_icon{
+	width: 30px;
+}
+.rigister .write{
+	margin: 15px 0px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+.rigister .phone{
+	width: 34px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	
+}
+.rigister .checkIn{
+	width: 60%;
+}
+.rigister .check{
+	width: 100%;
+}
+.rigister .checkCode{
+	width: 70%;
+	background: #f8f8f8;
+}
+.rigister .setting_pwd,.rePwd,.phone_num{
+	width: 84%;
+	background: #f8f8f8;
+}
+
+.rigister .btn{
+	width: 35%;
+	height: 36px;
+	line-height: 36px;
+	background: #e4393c;
+	border-radius: 5px;
+	color: #FFF;
+	text-align: center;
+	margin: 15px 0 15px 10px; 
+}
+.rigister .submit{
+	margin: 15px 20%;
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	background: #e4393c;
+	text-align: center;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 18px;
+}
+.rigister .protocol{
+	text-decoration: underline;
+	color: #CCC
+}

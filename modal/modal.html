@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="./modal/modal.css">
+<ion-modal-view class="bigerbox">
+	<div class="bigbox">
+		<div class="bar bar-header">
+			<i class="button button-clear icon ion-ios-arrow-left icon_color" ng-click="modal_off()"></i>
+			<div class="title ">确认付款</div>
+		</div>
+		<ion-content class="content">
+			<div class="Rmb">￥543.00</div>
+			<div class="clearfix padding b_line">
+				<span class="fl">支付账号</span>
+				<span class="fr">131****2121</span>
+			</div>
+			<div class="clearfix padding b_line">
+				<span class="fl">支付方式</span>
+				<div class="fr">
+					<span class="padding-right">账户余额</span>
+					<i class="icon icon ion-ios-arrow-right"></i>
+				</div>
+			</div>
+			<div class="box">
+				<div class="btn" ng-click="goPage('layout.dealsuccess')">
+					立即付款
+				</div>
+			</div>	
+		</ion-content>
+	</div>
+</ion-modal-view>

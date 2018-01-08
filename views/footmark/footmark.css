@@ -1,0 +1,17 @@
+.footmark .dateitem{
+	margin: 5px 8px;
+}
+.footmark .dateitem>div{
+	text-align: center;
+}
+.footmark .dateitem .week{
+	font-size: 16px; 
+	color: #CCC;
+}
+.footmark .dateitem .date{
+	padding-top: 10px;
+	font-size: 16px;
+}
+.footmark .content{
+	padding-bottom: 49px;
+}

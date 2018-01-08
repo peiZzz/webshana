@@ -1,0 +1,39 @@
+<div class="refund">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">退款/售后</div>	
+		<div class="button button-clear">
+			<i class="button button-clear icon ion-ios-search placeholder-icon" ng-click="goValue()"></i>
+			<i class="button button-clear icon ion-android-cart placeholder-icon"></i>
+		</div>	
+	</ion-header-bar>
+
+	<div class="content">
+		<div class="content_title padding">
+			<span>SANA莎娜旗舰店</span>
+		</div>
+		<div class="list">
+			<div class="" ng-repeat="item in data track by $index">
+				<div class="row">
+					<div class="col col-90">
+						<div class="item item-thumbnail-left">
+							<img ng-src="{{item.img}}" class="auto_img">
+							<span>{{item.title}}</span>
+							<div class="para">{{item.para}}</div>
+						</div>
+					</div>
+					<div class="col col-10">
+						<span class="fr padding">x1</span>
+					</div>
+				</div>
+				<div class="clearfix price_line">
+					<span class="fr padding price">退款金额：<span>{{item.price}}</span></span>
+					<span class="state fr padding">{{item.state}}</span>										
+				</div>
+				<span class="fr checkDetail">查看详情</span>
+			</div>
+		</div>
+	</div>
+</div>

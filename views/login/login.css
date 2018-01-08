@@ -1,0 +1,60 @@
+.login .message{
+	padding: 5% 20%;
+}
+.login .user_img_box{
+	text-align: center;
+}
+.login .user_icon{
+	border-radius: 50%;
+	width: 80px;
+}
+.login .write{
+	margin: 15px 0px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+.login .input_icon{
+	width: 30px;
+}
+.login input{
+	width: 84%;
+	height: 30px;
+	background: #f8f8f8;
+
+}
+.login .submit{
+	margin: 15px 0; 
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #e4393c;
+	text-align: center;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 18px;
+}
+.login .rigister{
+	color:#5a97e9;
+	text-decoration: underline;
+}
+.login .forget{
+	text-decoration: underline;
+}
+.login .third_party_login{
+	padding: 0 20%;
+	text-align: center;
+	border-top:2px solid #CCC;  
+	position: relative;
+	padding-top: 20px;
+	margin-top: 100px;
+}
+.login .third_party_login .up{
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	top: -15px;
+	width: 30px;
+	color: #ccc;
+	background: #f8f8f8;
+	font-size: 30px;
+}

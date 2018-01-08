@@ -1,0 +1,52 @@
+.assess .content{
+	padding-bottom: 49px;
+}
+.assess .goods_dipect{
+	border-bottom: 1px solid #CCC;
+}
+.assess .content .dipect{
+	line-height: 44px;
+}
+.assess .dipect>span{
+	color: #c4c4c5;
+}
+.assess .dipect .stars{
+	font-size: 22px;
+	padding-left: 15px;
+
+}
+.assess .other_dipect{
+	border-bottom: 1px solid #CCC;
+}
+.assess .other_dipect_text{
+	text-align: center;
+	font-size: 18px;
+	color: #6b6b6b;
+}
+.assess .other_dipect .other_dipect_stars{
+	font-size: 24px;
+	padding-left: 15px;
+	color: #6b6b6b
+}	
+.assess .add_img{
+	width: 30%;
+	border: 2px dashed #CCC;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+.assess .assess_text{
+	border-bottom: 1px solid #CCC;
+}
+.assess .txt{
+	width: 100%;
+	height: 200px;
+	background: #f8f8f8
+}
+.assess .add_icon{
+	width: 80%;
+	margin: 0 auto;
+}
+.assess .submit{
+	width: 100%;
+}

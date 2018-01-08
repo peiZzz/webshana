@@ -1,0 +1,132 @@
+<div class="proDetail">
+	<ion-content class="content">
+		<div>
+			<img class="auto_img" src="./images/proDetail_banner.png">
+		</div>
+
+		<div class="">
+			<div class="row">
+				<div class="col col-80">
+					日本sana豆乳洗面奶女深层清洁补水保湿控油泡沫洁面乳温和卸妆
+				</div>
+				<div class="col shareFont">
+					<div class="share">
+						<img src="./images/icons/Evaluate_success_bar_icon_1@3x(33).png">
+					</div>
+						分享有赏					
+				</div>
+			</div>
+			<div class="price padding-left">
+				<i class="icon ion-social-yen"></i>
+				<span>75</span>
+			</div>
+
+			<div class="row shop_m">
+				<div class="col col-33">快递:<span>0.00</span></div>
+				<div class="col col-33 num">月销 <span>4799</span>笔</div>
+				<div class="col col-33 place">江苏苏州</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-90">
+					<div class="row">
+						<div class="col col-25 assure" ng-repeat="item in data track by $index">
+							<img ng-src="{{item.img}}">
+							<span>{{item.name}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col right_icon">
+					<i class="icon ion-ios-arrow-right fr"></i>
+				</div>
+			</div>
+			<div>
+				<div class="padding">
+				<span>已选:<span>150g/ml</span></span>
+				<span class="fr r_icon">
+					<i class="icon ion-ios-arrow-right fr"></i>
+				</span>
+				</div>
+				<div class="padding">
+					<span>产品参数</span>
+					<span class="fr r_icon">
+						<i class="icon ion-ios-arrow-right fr"></i>
+					</span>
+				</div>
+			</div><!-- 参数 -->
+
+			<div class="">
+				<div class="asses-title padding">	
+					<div class="line1 fl"></div>				
+					<div class="asses_m">
+						<i class="icon ion-ios-chatbubble-outline "></i>
+						评价
+					</div>	
+					<div class="line2 fl"></div>				
+				</div>
+
+				<div class="asses_content">
+					<div class="asses_header padding">
+						宝贝评价(25485)
+					</div>
+					<div >
+						<div class="asses_style padding" ng-repeat="item in assData track by $index">{{item.name}}(<span>{{item.num}}</span>)
+						</div>
+					</div>
+					<div class="pro_message">
+						<div class="pro_message_title">
+							<div class="fl"></div>
+							产品信息
+						</div>
+
+						<div class="pro_message_content row ">
+							<div class="col col-25 " >
+								<div class="pro_message_content_left " ng-repeat="item in proData track by $index">
+									{{item.name}}
+								</div>
+							</div>
+							<div class="col">
+								<div class="pro_message_content_right" ng-repeat="item in proData track by $index">
+								{{item.content}}
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<img class="auto_img" src="./images/proDetail_img.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+	<div class="row footer">
+		<div class="col col-50 padding-clear">
+			<div class="row padding-clear">
+				<div class="col col-33 padding-clear">
+					<div class="footer_img">
+						<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x(30).png">
+					</div>
+					<div class="text">店铺</div>
+				</div>
+
+				<div class="col col-25 padding-clear">
+					<div class="footer_img">
+						<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x(31).png">
+					</div>
+					<div class="text " >客服</div>
+				</div>
+
+				<div class="col col-33 padding-clear">
+					<div class="footer_img">
+						<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x(32).png">
+					</div>
+					<div class="text">收藏</div>
+				</div>
+			</div>
+		</div>
+		<div class="col col-25 padding-clear join">加入购物车</div>
+		<div class="col padding-clear join-buy" ng-click="goPage('confirm')">立即购买</div>
+	</div>
+
+</div>

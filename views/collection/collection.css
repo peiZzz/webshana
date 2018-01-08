@@ -1,0 +1,26 @@
+.collection .title li{
+	width: 50%;
+	text-align: center;
+}
+.collection .content{
+	padding-bottom: 49px;
+}
+.collection .content_nav{
+	border-bottom: 1px solid #ccc;
+}
+.collection .content_nav>div{
+	width: 50%;
+	text-align: center;
+	line-height: 38px;
+	height: 38px;
+}
+.collection .text{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	margin-bottom: 30px;
+}
+.collection .border_bottom{
+   border-bottom: 1px solid #FFF;
+   line-height: 38px;
+}

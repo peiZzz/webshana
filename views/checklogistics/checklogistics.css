@@ -1,0 +1,67 @@
+
+.checklogistics .guess_title{
+	border-top:1px solid #dedede;
+	position: relative; 
+}
+.checklogistics .guess_title>span{
+	position: absolute;
+	left: 50%;
+	margin-left: -28px;
+	top: -10px;
+	background: #FFF;
+}
+.checklogistics .pro_title{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.checklogistics .cut{
+	text-decoration: line-through
+}
+.checklogistics .color{
+	color: #c00;
+	padding: 5px;
+}
+.checklogistics .backgroundcolor{
+	background: #fccecf;
+	font-size: 12px;
+}
+.checklogistics .textcolor{
+	color: #CCC;
+	font-size: 14px;
+	padding-top: 5px
+}
+.checklogistics .margin-clear{
+	margin-bottom: 0
+}
+.checklogistics .result{
+	color: #c00
+}
+.checklogistics .placecolor{
+	color: #ccc	
+}
+.checklogistics .dot{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #CCC;
+	background: #e4393c;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.checklogistics .logisticsdetail_line{
+	width: 1px;
+	height: 60px;
+	background: #ccc;
+	margin: 0 auto
+}
+.checklogistics .logisticsdetail_text{
+	color: #c00
+}
+.checklogistics .logisticsdetail_border{
+	border-bottom: 1px solid #CCC;
+	
+}
+.checklogistics .logisticsdetail-more{
+	text-align: center;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #CCC;
+}

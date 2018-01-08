@@ -1,0 +1,89 @@
+<div class="checklogistics">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class=" button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">查看物流</div>	
+	</ion-header-bar>
+
+	<ion-content>
+		<div class="list margin-clear">
+			<div class="item item-thumbnail-left">
+				<img src="./images/proDetail_banner.png" class="auto_img">
+				<div>
+					<span>物流状态</span>
+					<span class="result padding-left">已签收</span>
+				</div>
+				<div class="textcolor">
+					<span>承运来源：</span>
+					<span>中通快递</span>
+				</div >
+				<div class="textcolor">
+					<span>订单编号：</span>
+					<span>452646067309</span>
+				</div>
+			</div>
+
+			<div class="item item-thumbnail-left">
+				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(41).png" class="auto_img">
+				<div class="padding-top placecolor">自提柜</div>
+				<div class="padding-top">罗湖花园东门B号e栈</div>
+			</div>
+		</div>
+
+		<div class="logisticsdetail">
+			<div class="row">
+				<div class="col col-25">
+					<div class="dot"></div>
+					<div class="logisticsdetail_line"></div>
+				</div>
+				<div class="col col-75 logisticsdetail_border">
+					<div class="logisticsdetail_text">
+						<span>
+							{中集e栈自提柜}已签收，签收人凭取货码签收。感谢使用罗湖花园东门B号e栈【自提柜】，期待再次为您服务。
+						</span>
+						<div class="padding-top">
+							<span class="padding-right">2017-09-08</span>
+							<span>20:32</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="logisticsdetail-more padding" >
+				<span ng-click="goPage('layout.classify')">
+					查看详细得物流信息 <i class="icon ion-ios-arrow-down"></i>
+				</span>
+			</div>
+		</div>
+
+
+		<div class="guess_title">
+		<span>猜你喜欢</span>
+		</div>
+
+		<div class="pro">
+			<div class="pro_title padding-left">
+				你可能还想买
+			</div>
+			<div class="row row-wrap">			
+				<div class="col col-50 " ng-repeat="item in newData track by $index">
+					<div class="box-border">
+						<img class="auto_img" ng-src="{{item.img}}" />
+						<div class="backgroundcolor">
+							<div>{{item.name}}</div>
+							<div class="color">
+								<div>
+									<i class="{{item.class}}"></i>
+									<span class="cut">{{item.oldPirce}}</span>
+									<span>{{item.newPirce}}</span>
+									<i class="{{item.classR}} fr"></i>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>					
+			</div>	
+		</div>
+	</ion-content>
+</div>

@@ -1,0 +1,16 @@
+
+.search .search_title{
+	font-size: 18px;
+}
+.search .history-search{
+	background: #e5e5e5;
+	border-radius:15px;
+	padding: 3px 10px;
+	margin: 5px;
+	display: inline-block;
+	font-size: 12px;
+}
+.search .search-int .color{
+	color: #000
+}
+

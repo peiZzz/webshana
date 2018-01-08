@@ -1,0 +1,140 @@
+
+.proDetail .shareFont{
+	font-size: 12px;
+	color:#CCC
+}
+.proDetail .share{
+	text-align: center;
+	height: 25px;
+}
+.proDetail .share>img{
+	width: 25px;
+	margin: 0 auto
+}
+.proDetail .price{
+	color: #ff2f23;
+}
+.proDetail .price>span{
+	font-size: 18px;
+	font-weight: bold;
+}
+.proDetail .shop_m{
+	color:#CCC;
+}
+.proDetail .content{
+	margin-bottom: 49px;
+}
+.proDetail .place{
+	text-align: right;
+}
+.proDetail .num{
+	text-align: center;
+}
+.proDetail .assure{
+	padding: 0;
+	font-size: 12px;
+	text-align: center;
+	color: #CCC;
+}
+.proDetail .assure>img{
+	width: 12px;
+	margin-right: 5px;
+}
+.proDetail .right_icon{
+	font-size: 20px;
+	color: #CCC;
+	height: 50px;
+	line-height: 30px;
+}
+.proDetail .r_icon{
+	font-size: 20px;
+	color:#CCC;
+}
+.proDetail .asses-title{
+	line-height: 30px;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.proDetail .line1{
+	width: 30%;
+	height: 2px;
+	background: #bbb;
+	position: absolute;
+	left: 0;
+	top: 25px;
+}
+.proDetail .line2{
+	width: 30%;
+	height: 2px;
+	background: #bbb;
+	position: absolute;
+	right: 0;
+	top: 25px;
+}
+.proDetail .asses_m{
+	font-size: 16px;
+}
+.proDetail .asses_style{
+	border-radius: 8px;
+	background: #fccecf;
+	margin: 5px;
+	display: inline-block;
+	padding: 5px;
+	font-size: 12px;
+}
+.proDetail .pro_message{
+	margin-bottom: 10px;
+}
+.proDetail .pro_message_title{
+	height: 32px;
+	line-height: 32px;
+	background: #e6e6e6;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.proDetail .pro_message_title>div{
+	width: 5px;
+	height: 32px;
+	background: #c00;
+	margin-right: 5px;
+}
+.proDetail .pro_message_content{
+	background:#e6e6e6; 
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.proDetail .pro_message_content_left{
+	color: #919191;
+	padding: 5px;
+}
+.proDetail .pro_message_content_right{
+	padding: 5px;
+}
+.proDetail .footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #ff393d;
+	padding: 0;
+	color: #FFF;
+}
+.proDetail .footer_img>img{
+	width: 30px;
+	margin: 0 auto
+}
+.proDetail .footer .text{
+	text-align: center;
+}
+.proDetail .join,.join-buy{
+	text-align: center;
+	line-height: 50px;
+}
+.proDetail .join{
+	background: #f82025
+}
+.proDetail .join-buy{
+	background:#e6050a 
+}

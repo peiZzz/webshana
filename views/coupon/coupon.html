@@ -1,0 +1,36 @@
+<div class="coupon">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class=" button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title"> 优惠券</div>	
+	</ion-header-bar>
+	<div class="content">
+		<div class="search padding">
+			<input type="txt" name="" class="search_input padding-left" placeholder="请输入优惠码">
+			<button class="btn">兑换</button>
+		</div>
+
+		<div class="coupon_list">
+			<div ng-repeat="item in data track by $index" style="{{item.style}}" class="coupon_item">
+				<img src="./images/yhq_top.png" class="background_img auto_img">
+				<div class="row">
+					<span class="term col col-50">{{item.term}}</span>
+					<span class="yhq_r col col-50">
+						<span>￥</span>
+						<span class="price">{{item.price}}</span>
+						<span>优惠券</span>
+					</span>
+				</div>
+				<div class="yhq_bottom">
+					<span>使用范围：</span>
+					<span>{{item.range}}</span>
+					<span>过期时间：</span>
+					<span>{{item.time}}</span>
+					<span>编号：</span>
+					<span>{{item.num}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

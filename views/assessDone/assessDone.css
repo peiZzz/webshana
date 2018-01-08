@@ -1,0 +1,119 @@
+.assessDone .content{
+	padding-bottom: 49px;
+}
+.assessDone .thanks_txt{
+	color:#ff393d;
+	background: #ffe3e4;
+	text-align: center;
+	padding: 20px 0;
+
+}
+.assessDone .btn{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border-radius:10px; 
+	border: 1px solid #ff393d;
+	color: #ff393d;
+	text-align: center;
+	margin: 10px auto;
+}
+.assessDone .gifts{
+	text-align: center;
+	padding-top: 10px;
+	border-bottom: 1px solid #CCC;
+}
+.assessDone .gifts .gift_title {
+	color: #CCC;
+}
+.assessDone .gift_box{
+	padding: 10px 20%;
+}
+.assessDone .gift_left,.gift_right{
+	width: 50%;
+	padding:0 5% 
+}
+.assessDone .gift_img{
+	border-radius: 50%;
+	background: #ffe3e4
+}
+.assessDone .draw{
+	border: 1px solid #E4393c;
+	border-radius: 18px;
+	padding: 5px;
+	color: #ff393d;
+	margin: 10px 0px;
+}
+
+.assessDone .guess_title{
+	
+	border-top:1px solid #ccc;
+	position: relative;
+	width: 80%;
+	margin: 20px auto 0; 
+
+}
+.assessDone .guess_title>span{
+	position: absolute;
+	left: 50%;
+	margin-left: -82px;
+	top: -10px;
+	background: #f8f8f8;
+	color: #CCC;
+	padding: 0 5px
+}
+.assessDone .pro_title{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.assessDone .cut{
+	text-decoration: line-through
+}
+.assessDone .color{
+	color: #c00;
+	padding: 5px;
+}
+.assessDone .backgroundcolor{
+	background: #fccecf;
+	font-size: 12px;
+}
+.assessDone .textcolor{
+	color: #CCC;
+	font-size: 14px;
+	padding-top: 5px
+}
+.assessDone .margin-clear{
+	margin-bottom: 0
+}
+.assessDone .result{
+	color: #c00
+}
+.assessDone .placecolor{
+	color: #ccc	
+}
+.assessDone .dot{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #CCC;
+	background: #e4393c;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.checklogistics .logisticsdetail_line{
+	width: 1px;
+	height: 60px;
+	background: #ccc;
+	margin: 0 auto
+}
+.checklogistics .logisticsdetail_text{
+	color: #c00
+}
+.checklogistics .logisticsdetail_border{
+	border-bottom: 1px solid #CCC;
+	
+}
+.checklogistics .logisticsdetail-more{
+	text-align: center;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #CCC;
+}

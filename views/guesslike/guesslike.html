@@ -1,0 +1,30 @@
+
+<div class="guess padding">
+	<div class="guess_title">
+		<span>猜你喜欢</span>
+	</div>
+
+	<div class="pro">
+		<div class="pro_title">
+			你可能还想买
+		</div>
+		<div class="row row-wrap">			
+			<div class="col col-50 " ng-repeat="item in newData track by $index">
+				<div class="box-border">
+					<img class="auto_img" ng-src="{{item.img}}" />
+					<div class="backgroundcolor">
+						<div>{{item.name}}</div>
+						<div class="color">
+							<div>
+								<i class="{{item.class}}"></i>
+								<span class="cut">{{item.oldPirce}}</span>
+								<span>{{item.newPirce}}</span>
+								<i class="{{item.classR}} fr"></i>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>					
+		</div>	
+	</div>
+</div>

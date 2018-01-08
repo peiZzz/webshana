@@ -1,0 +1,65 @@
+.logisticsList .header_box{
+	background: #ffe3e4
+}
+.logisticsList .header_txt{
+	text-align: center;
+	margin-top:12%;
+	color:#e4393c; 
+}
+.logisticsList .header_img{
+	width: 80%;
+}
+.logisticsList .list_message{
+	margin-bottom: 0
+}
+.logisticsList .list_message img{
+	width: 80%;
+}
+.logisticsList .list_message .list_title{
+	font-size: 18px;
+	color: #ff5e61
+}
+.logisticsList .list_message .list_txt{
+	color: #ccc;
+	
+}
+.logisticsList .warp{
+	overflow: auto;
+	white-space: normal;
+}
+.logisticsList .margin_clear{
+	margin-bottom: 0
+}
+.logisticsList .list_color{
+	color: #CCC;
+}
+.logisticsList .pro_color{
+	font-size: 14px;
+	color:#ccc
+}
+.logisticsList .pro_d{
+	display: inline-block;
+	width: 80%;
+}
+.logisticsList .border_clear{
+	border: none;
+}
+.logisticsList .btn{
+	display: inline-block;
+	width: 80px;
+	border-radius:10px;
+	border: 1px solid #444;
+	text-align: center;
+	height: 30px; 
+	line-height: 30px;
+	margin: 5px;
+}
+.logisticsList .border_line{
+	border-bottom: 1px solid #c4c4c4;
+}
+.logisticsList .more{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin: 5px;
+}

@@ -1,0 +1,42 @@
+.message .message_content{
+	margin-bottom: 50px;
+	padding-bottom: 100px
+
+}
+.message .message_content_list{
+	border-top: 5px solid #CCC;
+	border-bottom: 5px solid #CCC;
+}
+.message .nav{
+	text-align: center;
+}
+.message .nav>img{
+	width: 30px;
+	display: block;
+	margin: 0 auto
+}
+.message .list_name{
+	font-size: 16px;
+	color:#000;
+	font-weight: bold;
+}
+.message .list_content{
+	font-weight: 12px;
+	color: #444;
+	padding-top: 20px;
+}
+.message .message_line{
+	position: relative;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+.message .message_line>span{
+	display: inline-block;
+	width: 88px;
+	position: absolute;
+	left: 50%;
+	margin-left: -44px;
+	top: 10px;
+	background: #f8f8f8;
+	color: #444;
+}

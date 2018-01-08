@@ -1,0 +1,26 @@
+.guess .guess_title{
+	border-top:1px solid #dedede;
+	position: relative; 
+}
+.guess .guess_title>span{
+	position: absolute;
+	left: 50%;
+	margin-left: -28px;
+	top: -10px;
+	background: #FFF;
+}
+.guess .pro_title{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.guess .cut{
+	text-decoration: line-through
+}
+.guess .color{
+	color: #c00;
+	padding: 5px;
+}
+.guess .backgroundcolor{
+	background: #fccecf;
+	font-size: 12px;
+}

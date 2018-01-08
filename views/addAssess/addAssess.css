@@ -1,0 +1,29 @@
+.addAssess .goodsTxt{
+	padding-top: 10px;
+}
+.addAssess .goodsdetail{
+	border-bottom:1px solid #CCC; 
+}
+.addAssess .put{
+	padding: 10px 10px;
+	border-bottom:1px solid #CCC; 
+}
+.addAssess .putbox{
+	width: 100%;
+	height: 150px;
+	background: #f8f8f8
+}
+.addAssess .add_img{
+	width: 30%;
+	border: 2px dashed #CCC;
+	text-align: center;
+	border-radius: 5px;
+	color: #ccc;
+}
+.addAssess .add_icon{
+	width: 80%;
+	margin: 0 auto;
+}
+.addAssess .submit{
+	width: 100%;
+}

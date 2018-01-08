@@ -1,0 +1,31 @@
+<div class="dealfail">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class=" button button-clear" ui-sref="confirm">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">交易失败</div>	
+	</ion-header-bar >
+	<ion-content >
+		<div class="row">
+			<div class="col col-60 align">
+				<h4>非常抱歉，付款未成功</h4>
+				<div class="">失败的原因:余额不足或银行处理异常</div>
+			</div>
+			<div class="col">
+				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(43).png" class="auto_img">
+			</div>
+		</div>
+		<div class="padding ">
+			<div class="box row">
+				<div class="col col-50 padding-right">
+					<div class="btn fr ">查看订单</div>
+				</div>
+				<div class="col col-50 padding-left">
+					<div class="btn fl">返回菜单</div>
+				</div>								
+			</div>
+		</div>
+
+		<div ui-view class="conter"></div>
+	</ion-content>
+</div>

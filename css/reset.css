@@ -1,0 +1,36 @@
+body{
+	background: #f8f8f8;
+}
+.auto_img{
+	width: 100%;
+	display: block;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left
+}
+.search-int{
+	margin-left: 10px;
+	margin-right: 30px;
+}
+.bgcolor{
+	background: #CCC;
+}
+.row+.row{
+	margin-top: 5px;
+	padding-top:5px; 
+}
+
+.white-bg{
+	background-color: #fff;
+}
+.padding-clear{
+	padding: 0px;
+}
+.clearfix{
+	overflow: hidden;
+}
+
+

@@ -1,0 +1,50 @@
+<div class="collection">
+	<ion-header-bar class="bar-positive bar-assertive item-input-inset">
+		<div class="col col-10 button button-clear" ng-click="back()">
+			<i class="icon ion-ios-arrow-back"></i>
+		</div>
+		<div class="title">
+			<ul class="clearfix">
+				<li class="fl" ng-repeat="key in title track by $index">
+					<span ng-class="{'border_bottom':  aIndex === $index }" ng-click="title_click($index)">{{key.txt}}</span>
+				</li>
+			</ul>
+		</div>	
+		<div class="button button-clear">
+			<i class="button button-clear icon ion-ios-search placeholder-icon" ng-click=""></i>
+			<i class="button button-clear icon ion-android-cart placeholder-icon"></i>
+		</div>	
+	</ion-header-bar>
+	<ion-slide-box show-pager="{{slide.showPager}}" active-slide="aIndex">
+		<ion-slide >
+			<div class="content">
+				<div class="content_nav clearfix">
+					<div class="fl">
+						全部宝贝(<span>1</span>)
+					</div>
+					<div class="fl">
+						我的分类
+					</div>
+
+				</div>
+				<div class="content_txt">
+					<div class="content_txt_title padding">
+						<span class="">1个月内的收藏</span>
+					</div>
+
+					<div class="list">
+						<div class="item item-thumbnail-left" ng-repeat="item in data track by $index">
+							<img ng-src="{{item.img}}" class="auto_img">
+							<div class="text">{{item.text}}</div>
+							<div class="price">{{item.price}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div>222</div>
+		</ion-slide>
+		
+	</ion-slide-box>
+</div>

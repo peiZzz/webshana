@@ -1,0 +1,44 @@
+body,html{
+	height: 100%;
+}
+.classify .classify-int .color{
+	color:#000;
+}
+.classify .row{
+	padding: 0;
+}
+.classify .classify_list{
+	text-align: center;
+	font-size: 16px;
+	padding: 0;
+	background-color: #fde9e9; 
+}
+.classify .classify_border{
+	border-bottom: 1px solid #FFF;
+	color: #ec4a4e;
+	background-color: #fde9e9;
+}
+.classify .left_content{
+	height: calc(100% - 49px);
+}
+.classify .scroll-view.scroll-y{
+	overflow-y: hidden;
+}
+.classify .title{
+	font-size: 18px;
+	color: #ec4a4e;
+	font-weight: bold;
+}
+.classify .content{
+	margin-bottom: 50px;
+}
+
+.classify .product{
+	font-size: 12px;
+	background-color: #fccecf;
+	text-align: center;
+}
+.classify .product_img{
+	border: 1px solid #fccecf;
+	box-sizing: border-box;
+}
