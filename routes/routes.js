@@ -1,6 +1,6 @@
 angular.module('app')
 	.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-		$urlRouterProvider.otherwise('yindao');
+		$urlRouterProvider.otherwise('/rigister');
 		$stateProvider
 			.state('layout', {
 				url: '',

@@ -11,34 +11,34 @@
 			<div class="put">
 				<div class="clearfix write">
 					<div class="fl phone">+86</div>
-					<input type="text" name="" class="fl phone_num" placeholder="请输入帐号/手机号码">
+					<input type="text" name="" class="fl phone_num" placeholder="请输入帐号/手机号码" ng-model = "userInfo.phone"/>
 				</div>
 				<div class="clearfix">
 					<div class="fl checkIn">
 						<div class="clearfix write check">
-							<img src="./images/icons/Evaluate_success_bar_icon_1@3x(37).png" class="fl input_icon">
-							<input type="password" name="" class="fl checkCode" placeholder="请输入验证码">
+							<img src="./images/icons/Evaluate_success_bar_icon_1@3x(37).png" class="fl input_icon" />
+							<input type="text" name="" class="fl checkCode" placeholder="请输入验证码" ng-model="userInfo.code"/>
 						</div>
 					</div>
-					<div class="btn fl">
+					<div class="btn fl" ng-click="getValidCode()">
 						获取验证码
 					</div>
 				</div>
 				<div class="clearfix write">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(36).png" class="fl input_icon">
-					<input type="password" name="" class="fl setting_pwd" placeholder="请设置密码">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(36).png" class="fl input_icon" />
+					<input type="password" name="" class="fl setting_pwd" placeholder="请设置密码" ng-model="userInfo.pwd"/>
 				</div>
 				<div class="clearfix write">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(36).png" class="fl input_icon">
-					<input type="password" name="" class="fl rePwd" placeholder="请再次输入密码">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(36).png" class="fl input_icon" />
+					<input type="password" name="" class="fl rePwd" placeholder="请再次输入密码" ng-model="userInfo.rePwd"/>
 				</div>
 			</div>
 
-			<div class="submit" ng-click="goPage('login')">
+			<div class="submit" ng-click="register()">
 			 注册
 			</div>
 			<div>
-				<input type="checkbox" name="">
+				<input type="checkbox" name="" />
 				<span class=".protocol">我已经同意豆乳用户计划</span>
 			</div>
 		</div>

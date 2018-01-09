@@ -1,29 +1,32 @@
 angular.module('app')
-	.factory('Tip', ['$ionicPopup', function ($ionicPopup) {
+	.factory('tip', ['$ionicPopup', '$ionicLoading',function ($ionicPopup,$ionicLoading) {
 
 		return {
-			showTip: function (o, scope) {
+			showTip: function (o) {
 				$ionicPopup.show({
-					template:  o.tipContent,
-					title: o.title,
-					scope: scope,
+					title:'<div class="text-center">' + o.msg + '</div>',
 					buttons: [
 						{
-							text: '取消',
-							type: 'button-assertive' 
-						},
-						{
-							text: '确认',
-							type: 'button-positive',
-							onTap: function () {
-								return typeof o.fn === 'function' && o.fn();
-							}
+							text: '<span>确认</span>',
+							type: 'button-balanced' 
 						}
 					]
-				}).then(function (res) {
-					console.log('res ==> ', res);
-				})
+				});
+			},
+
+			loadTips: {
+				showLoading:function(){
+					$ionicLoading.show({
+						template:'<ion-spinner icon="spiral" class="spinner-balanced"></ion-spinner>'
+					});
+				},
+				hideLoading:function(){
+					$ionicLoading.hide();
+				}
+				
 			}
-		}
+
+			
+		};
 
 	}])
