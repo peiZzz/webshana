@@ -12,7 +12,7 @@
 			<div>扫一扫</div>
 		</div>
 	</ion-header-bar>			
-	<div class="ion-content">
+	<ion-content>
 		<ion-slide-box does-continue="{{slide.doesContinue}}" auto-play="slide.autoPlay" slide-interval="{{slide.intervalTime}}" show-pager="{{slide.showPager}}">
 			<ion-slide ng-repeat="item in data track by $index">
 				<img class="auto_img" ng-src="{{item.img}}" />
@@ -62,7 +62,7 @@
 			<div class="title ">新品上市</div>
 		</div>	
 
-		<div class="row row-wrap padding">			
+		<div class="row row-wrap padding listime">			
 			<div class="col col-50 " ng-repeat="item in newData track by $index">
 				<div class="box-border">
 					<img class="auto_img" ng-src="{{item.img}}" />
@@ -81,7 +81,7 @@
 			</div>
 			
 		</div>	
-	</div>
+	</ion-content>
 
 	
 </div>

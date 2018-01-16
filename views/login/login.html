@@ -8,21 +8,21 @@
 	<div class="content">
 		<div class="message">
 			<div class="user_img_box">
-				<img src="./images/icons/personal_icon.png" class="user_icon">
+				<img src="./images/icons/personal_icon.png" class="user_icon" />
 			</div>
 			<div >
 				<div class="clearfix write">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(35).png" class="fl input_icon">
-					<input type="text" name="" class="fl" placeholder="请输入帐号/手机号码">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(35).png" class="fl input_icon" />
+					<input type="text" name="" class="fl" placeholder="请输入帐号/手机号码" ng-model="userInfo.phone" />
 				</div>
 				<div class="clearfix write">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(36).png" class="fl input_icon">
-					<input type="password" name="" class="fl" placeholder="请输入密码">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(36).png" class="fl input_icon" />
+					<input type="password" name="" class="fl" placeholder="请输入密码" ng-model="userInfo.pwd" />
 				</div>
 			</div>
 
-			<div class="submit" ng-click="goPage('layout.home')">
-			 提交
+			<div class="submit" ng-click ="login()">
+			 登录
 			</div>
 			<div class="clearfix">
 				<span class="fl rigister" ng-click="goPage('rigister')">
@@ -38,15 +38,15 @@
 			<span>其他登录方式</span>
 			<ul class="clearfix row">
 				<li class="fl col col-33">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(29).png" class="auto_img">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(29).png" class="auto_img" />
 					<div>微信</div>
 				</li>
 				<li class="fl col col-33">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(17).png" class="auto_img">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(17).png" class="auto_img" />
 					<div>QQ</div>
 				</li>
 				<li class="fl col col-33">
-					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(18).png" class="auto_img">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(18).png" class="auto_img" />
 					<div>微博</div>
 				</li>
 			</ul>

@@ -1,6 +1,6 @@
 angular.module('app')
 	.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-		$urlRouterProvider.otherwise('/rigister');
+		$urlRouterProvider.otherwise('/login');
 		$stateProvider
 			.state('layout', {
 				url: '',
@@ -24,7 +24,7 @@ angular.module('app')
 			})
 			//搜索页
 			.state('search', {
-				url: 'search',
+				url: '/search',
 				templateUrl: './views/search/search.html',
 				controller: 'searchController',
 				resolve: {
@@ -35,7 +35,7 @@ angular.module('app')
 			})
 			//搜索详情
 			.state('pro_search', {
-				url: 'pro_search',
+				url: '/pro_search',
 				templateUrl: './views/pro_search/pro_search.html',
 				controller: 'pro_searchController',
 				resolve: {
@@ -278,7 +278,7 @@ angular.module('app')
 			})
 			//登录
 			.state('login', {
-				url: 'login',
+				url: '/login',
 				templateUrl: './views/login/login.html',
 				controller: 'loginController',
 				resolve: {

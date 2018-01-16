@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('rigisterController',['$scope','validForm','tip','api','formatTime','$interval',function($scope,validForm,tip,api,formatTime,$interval){
+	.controller('rigisterController',['$scope','$state','validForm','tip','api','formatTime','$interval',function($scope,$state,validForm,tip,api,formatTime,$interval){
 		$scope.userInfo = {
 			phone:'',
 			pwd:'',
@@ -20,8 +20,13 @@ angular.module('app')
 			tip.loadTips.showLoading();
 			api.fetchPost('http://127.0.0.1:9000/register',$scope.userInfo)
 				.then(function(data){
-					console.log(data);
+					// console.log(data);
 					tip.loadTips.hideLoading();
+					if (data.data.statusCode == 201 || data.data.statusCode == 202) {
+						tip.showTip(data.data.msg);
+					}else {
+						$state.go('login')
+					};	
 				})
 				.catch(function(err){
 					console.log('出错了');
@@ -65,12 +70,12 @@ angular.module('app')
 		$scope.getValidCode = function () {
 			if(timerHandler){return}
 			timerHandler = $interval(function(){
-				$scope.show = true;
+				// $scope.show = true;
 				if(second <= 0){
 					$interval.cancel(timerHandler);
 					second = 59;
 					$scope.description = "获取验证码";
-					$scope.show = false;
+					// $scope.show = false;
 				}else{
 					$scope.description = second + "秒后重发";
 					second--;
@@ -80,11 +85,13 @@ angular.module('app')
 			api.fetchGet('http://127.0.0.1:9000/message', {phone: $scope.userInfo.phone})
 				.then(function (data) {
 					$scope.code = data.data.code;
-					console.log($scope.code)
+
+					tip.showTip(data.data.msg);
+					
 					tip.loadTips.hideLoading();
 				})
 				.catch(function(err){
-					console.log('cll');
+					console.log('rigster出错');
 					tip.loadTips.hideLoading();
 				})
 				

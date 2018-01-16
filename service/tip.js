@@ -4,7 +4,7 @@ angular.module('app')
 		return {
 			showTip: function (o) {
 				$ionicPopup.show({
-					title:'<div class="text-center">' + o.msg + '</div>',
+					title:'<div class="text-center">' + o + '</div>',
 					buttons: [
 						{
 							text: '<span>确认</span>',
