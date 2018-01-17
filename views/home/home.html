@@ -14,8 +14,8 @@
 	</ion-header-bar>			
 	<ion-content>
 		<ion-slide-box does-continue="{{slide.doesContinue}}" auto-play="slide.autoPlay" slide-interval="{{slide.intervalTime}}" show-pager="{{slide.showPager}}">
-			<ion-slide ng-repeat="item in data track by $index">
-				<img class="auto_img" ng-src="{{item.img}}" />
+			<ion-slide ng-repeat="item in data.banner track by $index">
+				<img class="auto_img" ng-src="{{item.imgurl}}"/>
 			</ion-slide>
 		</ion-slide-box>
 
@@ -47,12 +47,15 @@
 		</div>
 
 		<div class="row">
-			<div class="col col-33" ng-repeat="item in proData track by $index">
-				<img class="auto_img" ng-src="{{item.img}}">
+			<div class="col col-33" ng-repeat="item in data.product track by $index">
+				<img class="auto_img" ng-src="{{item.largeImg}}">
 				<div class="pro_detail">
-					<div class="pro_detail_title">{{item.name}}}</div>
+					<div class="pro_detail_title">{{item.pname}}</div>
 					<div class="pro_pirce">
-						<div><i class="{{item.class}}"></i><span>{{item.newPirce}}</span><i class="{{item.classR}} fr"></i></div>
+						<div>
+							<span>￥{{item.price}}</span>
+							<span><i class="ion-ios-cart fr"></i></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,17 +66,15 @@
 		</div>	
 
 		<div class="row row-wrap padding listime">			
-			<div class="col col-50 " ng-repeat="item in newData track by $index">
+			<div class="col col-50 " >
 				<div class="box-border">
-					<img class="auto_img" ng-src="{{item.img}}" />
+					<img class="auto_img" />
 					<div class="bgcolor">
-						<div>{{item.name}}</div>
+						<div></div>
 						<div class="color">
 							<div>
-								<i class="{{item.class}}"></i>
-								<span class="cut">{{item.oldPirce}}</span>
-								<span>{{item.newPirce}}</span>
-								<i class="{{item.classR}} fr"></i>
+								<span class="cut"></span>
+								<span></span>
 							</div>
 						</div>
 					</div>
