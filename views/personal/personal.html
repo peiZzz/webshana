@@ -1,88 +1,90 @@
 <div class="personal">
-	<div class="header">
-		<div class="user_box" >
-			<img src="./images/icons/personal_icon.png" class="user_icon" ng-click="goPage('login')">
-			<div class="user_id">
-				<span>ID:</span>
-				<span>Turbo</span>
+	<ion-content>
+		<div class="header">
+			<div class="user_box" >
+				<img src="./images/icons/personal_icon.png" class="user_icon" ng-click="goPage('login')">
+				<div class="user_id">
+					<span>ID:</span>
+					<span>Turbo</span>
+				</div>
+			</div>
+
+			<ul class="row">
+				<li class="col col-25">
+					<div>￥100</div>
+					<div>账户余额</div>
+				</li>
+				<li class="col col-25">
+					<div>100</div>
+					<div>用户积分</div>
+				</li>
+				<li class="col col-25" ng-click="goPage('layout.collection')">
+					<div>100</div>
+					<div>我的收藏</div>
+				</li>
+				<li class="col col-25" ng-click="goPage('layout.coupon')">
+					<div>6</div>
+					<div>优惠券</div>
+				</li>
+			</ul>	
+		</div>
+	
+		<div class="content">
+			<div class="clearfix padding border_line">
+				<span class="fl">我的订单</span>
+				<span class="fr" ng-click="goPage('layout.mygoods')">
+					<span class="more">查看更多订单</span>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</div>
+			<ul class="row clearfix powerMenu">
+				<li class="col col-20 fl">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(23).png" class="auto_img">
+					<div>待付款</div>
+				</li>
+				<li class="col col-20 fl">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(24).png" class="auto_img">
+					<div>待发货</div>
+				</li>
+				<li class="col col-20 fl">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(25).png" class="auto_img">
+					<div>待收货</div>
+				</li>
+				<li class="col col-20 fl">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(26).png" class="auto_img">
+					<div>待评价</div>
+				</li>
+				<li class="col col-20 fl" ng-click="goPage('layout.refund')">
+					<img src="./images/icons/Evaluate_success_bar_icon_1@3x(27).png" class="auto_img">
+					<div>退款/售后</div>
+				</li>
+			</ul>
+
+			<div class="">
+				<ul class=" setting">
+					<li class="clearfix" ng-click="goPage('layout.footmark')">
+						<span class="fl">我的足迹</span>
+						<i class="icon ion-chevron-right fr"></i>
+					</li>
+					<li class="clearfix">
+						<span class="fl"> 我的评论</span>
+						<i class="icon ion-chevron-right fr"></i>
+					</li>
+					<li class="clearfix">
+						<span class="fl">我的分享</span>
+						<i class="icon ion-chevron-right fr"></i>
+					</li>
+					<li class="clearfix" ng-click="goPage('personData')">
+						<span class="fl">会员中心</span>
+						<i class="icon ion-chevron-right fr"></i>
+					</li>
+					<li class="clearfix">
+						<span class="fl">设置中心</span>
+						<i class="icon ion-chevron-right fr"></i>
+					</li>
+
+				</ul>
 			</div>
 		</div>
-
-		<ul class="row">
-			<li class="col col-25">
-				<div>￥100</div>
-				<div>账户余额</div>
-			</li>
-			<li class="col col-25">
-				<div>100</div>
-				<div>用户积分</div>
-			</li>
-			<li class="col col-25" ng-click="goPage('layout.collection')">
-				<div>100</div>
-				<div>我的收藏</div>
-			</li>
-			<li class="col col-25" ng-click="goPage('layout.coupon')">
-				<div>6</div>
-				<div>优惠券</div>
-			</li>
-		</ul>	
-	</div>
-
-	<div class="content">
-		<div class="clearfix padding border_line">
-			<span class="fl">我的订单</span>
-			<span class="fr" ng-click="goPage('layout.mygoods')">
-				<span class="more">查看更多订单</span>
-				<i class="icon ion-chevron-right"></i>
-			</span>
-		</div>
-		<ul class="row clearfix powerMenu">
-			<li class="col col-20 fl">
-				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(23).png" class="auto_img">
-				<div>待付款</div>
-			</li>
-			<li class="col col-20 fl">
-				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(24).png" class="auto_img">
-				<div>待发货</div>
-			</li>
-			<li class="col col-20 fl">
-				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(25).png" class="auto_img">
-				<div>待收货</div>
-			</li>
-			<li class="col col-20 fl">
-				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(26).png" class="auto_img">
-				<div>待评价</div>
-			</li>
-			<li class="col col-20 fl" ng-click="goPage('layout.refund')">
-				<img src="./images/icons/Evaluate_success_bar_icon_1@3x(27).png" class="auto_img">
-				<div>退款/售后</div>
-			</li>
-		</ul>
-
-		<div class="">
-			<ul class=" setting">
-				<li class="clearfix" ng-click="goPage('layout.footmark')">
-					<span class="fl">我的足迹</span>
-					<i class="icon ion-chevron-right fr"></i>
-				</li>
-				<li class="clearfix">
-					<span class="fl"> 我的评论</span>
-					<i class="icon ion-chevron-right fr"></i>
-				</li>
-				<li class="clearfix">
-					<span class="fl">我的分享</span>
-					<i class="icon ion-chevron-right fr"></i>
-				</li>
-				<li class="clearfix" ng-click="goPage('personData')">
-					<span class="fl">会员中心</span>
-					<i class="icon ion-chevron-right fr"></i>
-				</li>
-				<li class="clearfix">
-					<span class="fl">设置中心</span>
-					<i class="icon ion-chevron-right fr"></i>
-				</li>
-
-			</ul>
-		</div>
-	</div>
+	</ion-content>
 </div>

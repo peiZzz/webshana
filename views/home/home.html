@@ -20,22 +20,11 @@
 		</ion-slide-box>
 
 		<div class="row">
-			<div class="col col-25 pro_title">
-				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(13).png">
-				<div>美白润肤</div>
+			<div class="col col-25 pro_title" ng-repeat="item in data.indexclassify track by $index">
+				<img class="auto_img" ng-src="{{item.Icimg}}"/>
+				<div>{{item.Icname}}</div>
 			</div>
-			<div class="col col-25 pro_title">
-				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(12).png">
-				<div>睫毛膏</div>
-			</div>
-			<div class="col col-25 pro_title">
-				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(11).png">
-				<div>保湿锁水</div>
-			</div>
-			<div class="col col-25 pro_title">
-				<img class="auto_img" src="./images/icons/Evaluate_success_bar_icon_1@3x_(10).png">
-				<div>控油祛痘</div>
-			</div>
+			
 		</div>
 
 		<div class="padding-top padding-bottom">
@@ -66,15 +55,16 @@
 		</div>	
 
 		<div class="row row-wrap padding listime">			
-			<div class="col col-50 " >
+			<div class="col col-50 " ng-repeat="item in data.newproduct track by $index" >
 				<div class="box-border">
-					<img class="auto_img" />
+					<img class="auto_img" ng-src="{{item.nimg}}"/>
 					<div class="bgcolor">
-						<div></div>
+						<div>{{item.nName}}</div>
 						<div class="color">
 							<div>
-								<span class="cut"></span>
-								<span></span>
+								<span class="cut">￥{{item.nOldprice}}</span>
+								<span>￥{{item.nprice}}</span>
+								<i class="ion-ios-cart fr"></i>
 							</div>
 						</div>
 					</div>

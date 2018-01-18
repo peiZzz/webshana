@@ -1,6 +1,11 @@
 body,html{
 	height: 100%;
 }
+.classify{
+	height: 100%;
+	background-color: #fde9e9; 
+	overflow: hidden;
+}
 .classify .classify-int .color{
 	color:#000;
 }
@@ -19,9 +24,9 @@ body,html{
 	background-color: #fde9e9;
 }
 .classify .left_content{
-	height: calc(100% - 49px);
+	height: calc(100%-49px);
 }
-.classify .scroll-view.scroll-y{
+.classify .scroll-view,.scroll-y{
 	overflow-y: hidden;
 }
 .classify .title{
@@ -29,10 +34,6 @@ body,html{
 	color: #ec4a4e;
 	font-weight: bold;
 }
-.classify .content{
-	margin-bottom: 50px;
-}
-
 .classify .product{
 	font-size: 12px;
 	background-color: #fccecf;

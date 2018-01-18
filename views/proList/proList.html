@@ -10,27 +10,29 @@
 		</div>	
 	</ion-header-bar>
 
-	<div class="pacse">
-		<div class="row padding sub">
-			<span class="col col-20" ng-repeat="item in data track by $index">{{item.name}}</span>
-		</div>
-		<div class="row row-wrap padding">			
-			<div class="col col-50 " ng-repeat="item in proData track by $index">
-				<div class="box-border" ng-click="goDeep(item.url)">
-					<img class="auto_img bor_img" ng-src="{{item.img}}"/>
-					<div class="">
-						<div class="proname" >{{item.name}}</div>
+	<ion-content>
+		<div class="pacse">
+			<div class="row padding sub">
+				<span class="col col-20" ng-repeat="item in data track by $index">{{item.name}}</span>
+			</div>
+			<div class="row row-wrap padding">			
+				<div class="col col-50 " ng-repeat="item in proData track by $index">
+					<div class="box-border" ng-click="goDeep(item.url)">
+						<img class="auto_img bor_img" ng-src="{{item.img}}"/>
 						<div class="">
-							<div class="color">
-								<i class="{{item.class}}"></i>
-								<span>{{item.newPirce}}</span>
-								<i class="{{item.classR}} fr"></i>
+							<div class="proname" >{{item.name}}</div>
+							<div class="">
+								<div class="color">
+									<i class="{{item.class}}"></i>
+									<span>{{item.newPirce}}</span>
+									<i class="{{item.classR}} fr"></i>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>	
-			</div>
-			
-		</div>	
-	</div>
+					</div>	
+				</div>
+				
+			</div>	
+		</div>
+	</ion-content>
 </div>

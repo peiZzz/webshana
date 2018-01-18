@@ -9,21 +9,21 @@
 			<i class="button button-clear icon ion-android-cart placeholder-icon"></i>
 		</div>	
 	</ion-header-bar>
-
-	<div class="content">
-		<div class=" row">
-			<div class="dateitem col-10" ng-repeat="item in data track by $index">
-				<div class="week">{{item.week}}</div>
-				<div class="date">{{item.date}}</div>
+	<ion-content>
+		<div class="content">
+			<div class=" row">
+				<div class="dateitem col-10" ng-repeat="item in data track by $index">
+					<div class="week">{{item.week}}</div>
+					<div class="date">{{item.date}}</div>
+				</div>
+			</div>
+			<div ng-click="gettime()" id="time">9月6日</div>
+			<div class="row row-wrap">
+				<div class="col col-33" ng-repeat="item in dateDetail track by $index">
+						<img ng-src="{{item.img}}" class="auto_img">
+				</div>
+				
 			</div>
 		</div>
-		<div ng-click="gettime()" id="time">9月6日</div>
-		<div class="row row-wrap">
-			<div class="col col-33" ng-repeat="item in dateDetail track by $index">
-					<img ng-src="{{item.img}}" class="auto_img">
-			</div>
-			
-		</div>
-	</div>
-
+	</ion-content>
 </div>

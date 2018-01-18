@@ -79,8 +79,8 @@ angular.module('app')
     $scope.total=0;
       if($scope.all_on_off){
         for(let i=0;i<$scope.items.length;i++){
-        $scope.items[i].onOff=true;
-        $scope.total=$scope.total + ($scope.items[i].price * $scope.items[i].sum)
+          $scope.items[i].onOff=true;
+          $scope.total=$scope.total + ($scope.items[i].price * $scope.items[i].sum)
         }
       }else{
         $scope.total=0;

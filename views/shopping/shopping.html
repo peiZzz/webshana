@@ -13,80 +13,76 @@
 			</ion-list>
 		</div>
 	</div>	 -->
-	<div class="btn_title">
-		<div class="buttons fl">
-	        <button class="button button-icon icon ion-ios-minus-outline"
-	          ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
-	    </div>
-	    <span class="btn_txt">sana莎娜旗舰店</span>
-	    <div class="buttons fr">
-	        <button class="button" ng-click="data.showDelete = false; data.showReorder = !data.showReorder">
-	            编辑
-	        </button>
-	    </div>
-	</div>
+	<ion-content>
+		<div class="btn_title">
+			<div class="buttons fl">
+		        <button class="button button-icon icon ion-ios-minus-outline"
+		          ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+		    </div>
+		    <span class="btn_txt">sana莎娜旗舰店</span>
+		    <div class="buttons fr">
+		        <button class="button" ng-click="data.showDelete = false; data.showReorder = !data.showReorder">
+		            编辑
+		        </button>
+		    </div>
+		</div>
 	
+	    <div class="content">
+	      	<ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
 
-    <div class="content">
-      
-      <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+		        <ion-item ng-repeat="item in items track by $index" 
+		                  item="item"
+		                 class="item-remove-animate">
+		          	<div class="list">
+			          	<div class="row">
+			          		<div class="col col-10 checkbox_F">
+			          			<input type="checkbox" name="" class="checkbox" ng-model="item.onOff" value="item.onOff" ng-change="puls(item.onOff,$index)">
+			          		</div>
+			      			<div class="item item-thumbnail-left col col-90">
+				          		<img ng-src="{{item.img}}" class="auto_img">
+				          		<div class="auto">{{item.title}}</div>
+				          		<div class="subtitle">￥{{item.subtitle}}</div>
+				          		<div class="padding-top ">
+				          			<span class="fl">{{item.price}}</span>
+				          			<span class="fr buy">
+				          				<span class="fl" ng-click="less_sum($index)">-</span>
+				          				<input type="number" class="fl price" value="{{item.sum}}">
+				          				<span class="fl" ng-click="plus_sum($index)">+</span>
+				          			</span>
+			      				</div>
+			          		</div>
+			          	</div>
+		          	</div>
+		          <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)">
+		          </ion-delete-button>
+		          <ion-option-button class="button-assertive"
+		                             ng-click="edit(item)">
+		            删除
+		          </ion-option-button>
+		          <ion-option-button class="button-calm"
+		                             ng-click="share(item)">
+		            Share
+		          </ion-option-button>
+		          <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+		        </ion-item>
 
-        <ion-item ng-repeat="item in items track by $index" 
-                  item="item"
-                 class="item-remove-animate">
-          <div class="list">
-          	<div class="row">
-          		<div class="col col-10 checkbox_F">
-          			<input type="checkbox" name="" class="checkbox" ng-model="item.onOff" value="item.onOff" ng-change="puls(item.onOff,$index)">
-          		</div>
-      			<div class="item item-thumbnail-left col col-90">
-	          		<img ng-src="{{item.img}}" class="auto_img">
-	          		<div class="auto">{{item.title}}</div>
-	          		<div class="subtitle">￥{{item.subtitle}}</div>
-	          		<div class="padding-top ">
-	          			<span class="fl">{{item.price}}</span>
-	          			<span class="fr buy">
-	          				<span class="fl" ng-click="less_sum($index)">-</span>
-	          				<input type="number" class="fl price" value="{{item.sum}}">
-	          				<span class="fl" ng-click="plus_sum($index)">+</span>
-	          			</span>
-      			</div>
-          	</div>
-          </div>
-          	
-          </div>
-          <ion-delete-button class="ion-minus-circled" 
-                             ng-click="onItemDelete(item)">
-          </ion-delete-button>
-          <ion-option-button class="button-assertive"
-                             ng-click="edit(item)">
-            删除
-          </ion-option-button>
-          <ion-option-button class="button-calm"
-                             ng-click="share(item)">
-            Share
-          </ion-option-button>
-          <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
-        </ion-item>
+	    	</ion-list>
 
-    </ion-list>
-
-    <div class="row padding_clear">
-      	<div class="col col-80 hide">
-      		<div class="padding-left fl all">
-	      		<input type="checkbox" name="" class="allcheck padding-top" ng-model="all_on_off" value="{{all_on_off}}" ng-click="all_onOff()">
-	      		<span>全选</span>
-	      	</div>
-	      	<span class="fr">
-	      		<span>合计：</span>
-	      		<span>{{total}}</span>
-	      	</span>
+	    	<div class="row padding_clear">
+	      		<div class="col col-80 hide">
+	      			<div class="padding-left fl all">
+		      			<input type="checkbox" name="" class="allcheck padding-top" ng-model="all_on_off" value="{{all_on_off}}" ng-click="all_onOff()">
+		      			<span>全选</span>
+		      		</div>
+			      	<span class="fr">
+			      		<span>合计：</span>
+			      		<span>{{total}}</span>
+			      	</span>
+		    	</div>
+			    <div class="col btn" ng-click="goPage('confirm')">
+			    	去结算
+			    </div>
+	    	</div>      	
 	    </div>
-	    <div class="col btn">
-	    	去结算
-	    </div>
-    </div>
-      	
-
-    </div>
+	</ion-content>
 </div>

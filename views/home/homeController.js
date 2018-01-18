@@ -6,13 +6,16 @@ angular.module('app')
 			intervalTime:2000,
 			showPager:true
 		}
-
+        $scope.data = {};
 		tip.loadTips.showLoading();
 		api.fetchGet('http://127.0.0.1:9000/home')
 			.then(function(data){
 				tip.loadTips.hideLoading();
-				$scope.data = data.data;
-				console.log('data==>',data);
+				let arr =['banner','indexclassify','product','newproduct'];
+				for(let i=0;i<data.data.length;i++){
+                     $scope.data[arr[i]] = data.data[i];
+				}
+				console.log($scope.data);
 			})
 			.catch(function(err){
 				tip.loadTips.hideLoading();
