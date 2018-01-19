@@ -14,12 +14,12 @@ angular.module('app')
 				let arr =['banner','indexclassify','product','newproduct'];
 				for(let i=0;i<data.data.length;i++){
                      $scope.data[arr[i]] = data.data[i];
+                     console.log("data.data==>",data.data)
 				}
-				console.log($scope.data);
+				// $scope.data = data.data
 			})
 			.catch(function(err){
 				tip.loadTips.hideLoading();
-				console.log(err);
 			})
 
 		// $scope.data = [
