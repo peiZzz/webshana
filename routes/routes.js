@@ -12,6 +12,17 @@ angular.module('app')
 					}]
 				}
 			})
+			//修改密码
+			.state('modifypwd', {
+				url: '/modifypwd',
+				templateUrl: './views/modifypwd/modifypwd.html',
+				controller: 'modifypwdController',
+				resolve: {
+					des: ['$ocLazyLoad', function ($ocLazyLoad) {
+						return $ocLazyLoad.load('modifypwd');
+					}]
+				}
+			})
 			.state('layout.home', {
 				url: '/layout/home',
 				templateUrl: './views/home/home.html',

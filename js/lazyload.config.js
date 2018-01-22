@@ -21,6 +21,7 @@ app.config(["$provide", "$compileProvider", "$controllerProvider", "$filterProvi
 			 			'./views/layout/layout.css'
 			 		]
 			 	},
+			 	
 		 		{
 			 		name: 'home',
 			 		files: [
@@ -206,6 +207,13 @@ app.config(["$provide", "$compileProvider", "$controllerProvider", "$filterProvi
 			 		files: [
 			 			'./views/rigister/rigisterController.js',
 			 			'./views/rigister/rigister.css'
+			 		]
+			 	},
+			 	{
+			 		name: 'modifypwd',
+			 		files: [
+			 			'./views/modifypwd/modifypwdController.js',
+			 			'./views/modifypwd/modifypwd.css'
 			 		]
 			 	},
 	 		]

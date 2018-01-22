@@ -21,5 +21,11 @@ angular.module('app')
 			isEqual:function(v1,v2){
 				return v1 == v2 ? true : false;
 			},
+
+			//验证邮箱
+			validEmail:function(val){
+				var reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;		
+				return reg.test(val);
+			}
 		};
 	}])
