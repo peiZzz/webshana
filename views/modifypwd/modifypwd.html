@@ -33,7 +33,7 @@
 			    <input type="password" placeholder="确认密码" ng-model="userInfo.repwd">
 			  </ion-item>
 			</ion-list>
-			<div ng-if="!userControl.isControl" class="button button-full button-balanced">提交</div>
+			<div ng-if="!userControl.isControl" class="button button-full button-balanced" ng-click="commit()">提交</div>
 		</div>		
 	</ion-content>
 </div>

@@ -29,17 +29,35 @@ angular.module('app')
 		$scope.getCode = function(){
 			if(!isValidEmail()){return};
 			$scope.userControl.isGetCode = true;
+			tip.loadTips.showLoading();
 			api.fetchGet('http://127.0.0.1:9000/emailcode',{email:$scope.userInfo.email})
 				.then(function(data){
+					tip.loadTips.hideLoading();
+					$scope.userInfo.validCode = data.data.validCode; 
+					tip.showTip(data.data.msg);
+					
 					console.log(data);
 				})
 				.catch(function(err){
+					tip.loadTips.hideLoading();
 					console.log(err)
 				})
 		};
 
 		$scope.commit = function(){
 			if(!isValid()){return};
+			tip.loadTips.showLoading();
+			api.fetchPost('http://127.0.0.1:9000/modifypwd',$scope.userInfo)
+				.then(function(data){
+					tip.loadTips.hideLoading();
+					if(data.data.statusCode == 800){
+						tip.showTip(data.data.msg);
+					}
+				})
+				.catch(err =>{
+					tip.loadTips.hideLoading();
+					console.log(err);
+				})
 		};
 
 		function isValidEmail(){
